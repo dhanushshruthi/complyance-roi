@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { CalculationInputs, CalculationResults, formatCurrency, formatPercentage } from '@/lib/calculations'
 
 interface CalculatorFormProps {
@@ -386,7 +386,7 @@ export default function CalculatorForm({ onCalculate, onSave, initialData }: Cal
                 </svg>
               </div>
               <p className="text-lg font-medium text-gray-700 mb-2">Ready to Calculate ROI</p>
-              <p className="text-sm">Fill in your scenario details and click "Calculate ROI" to see results</p>
+              <p className="text-sm">Fill in your scenario details and click &quot;Calculate ROI&quot; to see results</p>
               <button
                 onClick={calculateROI}
                 disabled={isCalculating || !formData.scenario_name.trim()}
