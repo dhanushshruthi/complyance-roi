@@ -6,8 +6,7 @@ This document outlines the technical approach, architecture, and implementation 
 
 ## 🎯 Project Goals
 
-- **Primary Objective**: Create a lightweight ROI calculator that demonstrates cost savings and payback for automated invoicing
-- **Time Constraint**: Complete functional prototype within 3 hours
+- **Primary Objective**: Create a lightweight ROI calculator that demonstrates cost savings and payback for automated invoicing.
 - **Lead Generation**: Capture user emails through gated report downloads
 - **Business Impact**: Always show favorable results for automation adoption
 
@@ -36,13 +35,13 @@ This document outlines the technical approach, architecture, and implementation 
 ### System Architecture
 
 ```
-┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│                 │    │                  │    │                 │
-│   Next.js       │    │   Supabase       │    │   External      │
-│   Frontend      │◄──►│   Database       │    │   Services      │
-│                 │    │   (PostgreSQL)   │    │   (Email/PDF)   │
-│                 │    │                  │    │                 │
-└─────────────────┘    └──────────────────┘    └─────────────────┘
+┌─────────────────┐    ┌──────────────────┐    
+│                 │    │                  │    
+│   Next.js       │    │   Supabase       │    
+│   Frontend      │◄──►│   Database       │    
+│                 │    │   (PostgreSQL)   │    
+│                 │    │                  │    
+└─────────────────┘    └──────────────────┘    
 │                │
 │  - React UI     │
 │  - Forms        │
@@ -54,24 +53,24 @@ This document outlines the technical approach, architecture, and implementation 
 
 ## 🛠️ Implementation Plan
 
-### Phase 1: Project Setup (15 minutes)
+### Phase 1: Project Setup
 - Initialize Next.js project with TypeScript
 - Set up Supabase project and connection
 - Configure Tailwind CSS
 - Create basic project structure
 
-### Phase 2: Database Schema (15 minutes)
+### Phase 2: Database Schema
 - Design and create database tables
 - Set up RLS (Row Level Security) policies
 - Create database functions if needed
 
-### Phase 3: Core Features (120 minutes)
+### Phase 3: Core Features
 - Build ROI calculator interface
 - Implement calculation logic
 - Create scenario management system
 - Develop report generation with email gate
 
-### Phase 4: Testing & Deployment (30 minutes)
+### Phase 4: Testing & Deployment
 - Test all functionality
 - Deploy to Vercel
 - Create comprehensive README
@@ -419,5 +418,3 @@ NEXTAUTH_URL=your_app_url
 - ✅ Security best practices followed
 
 ---
-
-*This documentation serves as the technical blueprint for the Invoicing ROI Simulator project, ensuring efficient development and successful delivery within the 3-hour timeframe.*
