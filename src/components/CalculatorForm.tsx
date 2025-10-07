@@ -135,7 +135,7 @@ export default function CalculatorForm({ onCalculate, onSave, initialData }: Cal
               type="text"
               value={formData.scenario_name}
               onChange={(e) => handleInputChange('scenario_name', e.target.value)}
-              className={`w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+              className={`w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 placeholder-gray-400 ${
                 errors.scenario_name ? 'border-red-500' : 'border-gray-300'
               }`}
               placeholder="e.g., Q4_Pilot"
@@ -154,7 +154,7 @@ export default function CalculatorForm({ onCalculate, onSave, initialData }: Cal
               type="number"
               value={formData.monthly_invoice_volume}
               onChange={(e) => handleInputChange('monthly_invoice_volume', parseInt(e.target.value) || 0)}
-              className={`w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+              className={`w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 placeholder-gray-400 ${
                 errors.monthly_invoice_volume ? 'border-red-500' : 'border-gray-300'
               }`}
               placeholder="2000"
@@ -173,7 +173,7 @@ export default function CalculatorForm({ onCalculate, onSave, initialData }: Cal
               type="number"
               value={formData.num_ap_staff}
               onChange={(e) => handleInputChange('num_ap_staff', parseInt(e.target.value) || 0)}
-              className={`w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+              className={`w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 placeholder-gray-400 ${
                 errors.num_ap_staff ? 'border-red-500' : 'border-gray-300'
               }`}
               placeholder="3"
@@ -193,7 +193,7 @@ export default function CalculatorForm({ onCalculate, onSave, initialData }: Cal
               step="0.01"
               value={formData.avg_hours_per_invoice}
               onChange={(e) => handleInputChange('avg_hours_per_invoice', parseFloat(e.target.value) || 0)}
-              className={`w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+              className={`w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 placeholder-gray-400 ${
                 errors.avg_hours_per_invoice ? 'border-red-500' : 'border-gray-300'
               }`}
               placeholder="0.17"
@@ -213,7 +213,7 @@ export default function CalculatorForm({ onCalculate, onSave, initialData }: Cal
               type="number"
               value={formData.hourly_wage}
               onChange={(e) => handleInputChange('hourly_wage', parseFloat(e.target.value) || 0)}
-              className={`w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+              className={`w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 placeholder-gray-400 ${
                 errors.hourly_wage ? 'border-red-500' : 'border-gray-300'
               }`}
               placeholder="30"
@@ -233,7 +233,7 @@ export default function CalculatorForm({ onCalculate, onSave, initialData }: Cal
               step="0.1"
               value={formData.error_rate_manual}
               onChange={(e) => handleInputChange('error_rate_manual', parseFloat(e.target.value) || 0)}
-              className={`w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+              className={`w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 placeholder-gray-400 ${
                 errors.error_rate_manual ? 'border-red-500' : 'border-gray-300'
               }`}
               placeholder="0.5"
@@ -252,7 +252,7 @@ export default function CalculatorForm({ onCalculate, onSave, initialData }: Cal
               type="number"
               value={formData.error_cost}
               onChange={(e) => handleInputChange('error_cost', parseFloat(e.target.value) || 0)}
-              className={`w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+              className={`w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 placeholder-gray-400 ${
                 errors.error_cost ? 'border-red-500' : 'border-gray-300'
               }`}
               placeholder="100"
@@ -271,7 +271,7 @@ export default function CalculatorForm({ onCalculate, onSave, initialData }: Cal
               type="number"
               value={formData.time_horizon_months}
               onChange={(e) => handleInputChange('time_horizon_months', parseInt(e.target.value) || 0)}
-              className={`w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+              className={`w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 placeholder-gray-400 ${
                 errors.time_horizon_months ? 'border-red-500' : 'border-gray-300'
               }`}
               placeholder="36"
@@ -290,7 +290,7 @@ export default function CalculatorForm({ onCalculate, onSave, initialData }: Cal
               type="number"
               value={formData.one_time_implementation_cost}
               onChange={(e) => handleInputChange('one_time_implementation_cost', parseFloat(e.target.value) || 0)}
-              className={`w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 ${
+              className={`w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-900 placeholder-gray-400 ${
                 errors.one_time_implementation_cost ? 'border-red-500' : 'border-gray-300'
               }`}
               placeholder="50000"
@@ -335,24 +335,24 @@ export default function CalculatorForm({ onCalculate, onSave, initialData }: Cal
                 <h3 className="text-lg font-semibold text-gray-800 mb-3">Detailed Breakdown</h3>
                 <div className="space-y-2 text-sm">
                   <div className="flex justify-between">
-                    <span>Cumulative Savings:</span>
-                    <span className="font-semibold">{formatCurrency(results.cumulative_savings)}</span>
+                    <span className="text-gray-700">Cumulative Savings:</span>
+                    <span className="font-semibold text-gray-900">{formatCurrency(results.cumulative_savings)}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span>Net Savings:</span>
-                    <span className="font-semibold">{formatCurrency(results.net_savings)}</span>
+                    <span className="text-gray-700">Net Savings:</span>
+                    <span className="font-semibold text-gray-900">{formatCurrency(results.net_savings)}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span>Monthly Error Savings:</span>
-                    <span className="font-semibold">{formatCurrency(results.monthly_error_savings)}</span>
+                    <span className="text-gray-700">Monthly Error Savings:</span>
+                    <span className="font-semibold text-gray-900">{formatCurrency(results.monthly_error_savings)}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span>Monthly Labor Cost (Manual):</span>
-                    <span className="font-semibold">{formatCurrency(results.monthly_labor_cost_manual)}</span>
+                    <span className="text-gray-700">Monthly Labor Cost (Manual):</span>
+                    <span className="font-semibold text-gray-900">{formatCurrency(results.monthly_labor_cost_manual)}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span>Monthly Automation Cost:</span>
-                    <span className="font-semibold">{formatCurrency(results.monthly_automation_cost)}</span>
+                    <span className="text-gray-700">Monthly Automation Cost:</span>
+                    <span className="font-semibold text-gray-900">{formatCurrency(results.monthly_automation_cost)}</span>
                   </div>
                 </div>
               </div>
